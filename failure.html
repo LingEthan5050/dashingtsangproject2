@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>End of the Quest - The Quest for the Mystic Orb</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script defer src="../js/script.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>End of the Quest</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="instructions.html">Game Instructions</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="failure-intro">
+                <p>Your quest for the Mystic Orb has come to an unexpected end. Whether by the twist of fate, a moment of hesitation, or a choice that led you astray, the journey concludes here. Yet, every end is but a new beginning in the grand tapestry of destiny.</p>
+                <p>Reflect on your journey, the decisions you made, and the paths you chose. Each step was a lesson, and each challenge, a teacher. The quest for the Mystic Orb is fraught with peril and mystery, but it is within these trials that we find our true strength.</p>
+            </section>
+            <section id="encouragement">
+                <h2>Do not despair, Adventurer.</h2>
+                <p>The paths of fate are many, and the quest for the Mystic Orb is ever-changing. What lies behind you is history; what lies ahead is a mystery. When you are ready, the Orb will await your return, for destiny offers infinite chances to those who seek it.</p>
+            </section>
+            <section id="retry">
+                <button id="retryButton">Attempt the Quest Again</button>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; Da 2024</p>
+        </footer>
+    </div>
+    <script>
+        document.getElementById('retryButton').addEventListener('click', function() {
+            window.location.href = 'index.html'; 
+        });
+    </script>
+</body>
+</html>

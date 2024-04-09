@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystic Caverns - The Quest for the Mystic Orb</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script defer src="../js/script.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Mystic Caverns</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="instructions.html">Game Instructions</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="caverns-intro">
+                <p>The entrance to the Mystic Caverns looms before you, a gaping maw in the earth that swallows all light. Legends tell of its ever-shifting paths and the ancient magic that permeates its air. Some say it's a place of great power; others, a tomb for the unwary.</p>
+            </section>
+            <section id="caverns-choices">
+                <h2>Choose your path carefully:</h2>
+                <button id="leftPath">Take the left path</button>
+                <button id="rightPath">Take the right path</button>
+                <button id="backOutside">Retreat and head back outside</button>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; Da 2024</p>
+        </footer>
+    </div>
+    <script>
+        document.getElementById('leftPath').addEventListener('click', function() {
+            window.location.href = 'left-path.html'; 
+        });
+
+        document.getElementById('rightPath').addEventListener('click', function() {
+            window.location.href = 'right-path.html'; 
+        });
+
+        document.getElementById('backOutside').addEventListener('click', function() {
+            window.location.href = 'forest.html'; 
+        });
+    </script>
+</body>
+</html>

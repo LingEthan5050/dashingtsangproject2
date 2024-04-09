@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ancient Ruins - The Quest for the Mystic Orb</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script defer src="../js/script.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Ancient Ruins</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="instructions.html">Game Instructions</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="ruins-intro">
+                <p>Before you lie the Ancient Ruins of Eldoria, a relic of a bygone era. The stone structures, overtaken by nature, stand silent. Legends speak of these ruins as a place of power, holding secrets from the past and treasures untold. Yet, danger lurks within, as ancient guardians are said to protect these grounds.</p>
+            </section>
+            <section id="ruins-choices">
+                <h2>How will you proceed?</h2>
+                <button id="exploreRuins">Explore the ruins</button>
+                <button id="avoidRuins">Circumvent the ruins and continue</button>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; Da 2024</p>
+        </footer>
+    </div>
+    <script>
+        document.getElementById('exploreRuins').addEventListener('click', function() {
+            window.location.href = 'explore-ruins.html'; 
+        });
+
+        document.getElementById('avoidRuins').addEventListener('click', function() {
+            window.location.href = 'continue-path.html'; 
+        });
+    </script>
+</body>
+</html>

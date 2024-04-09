@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continue Your Path - The Quest for the Mystic Orb</title>
+    <link rel="stylesheet" href="..//css/styles.css">
+    <script defer src=".//js/script.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Continue Your Path</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="instructions.html">Game Instructions</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="path-continuation">
+                <p>Choosing to stick to the beaten path, you march forward through the dense foliage of the forest, the ruins now a mere silhouette against the setting sun. The air grows chill as night approaches, and you find yourself at a crossroads: one path leads to a small village, while the other delves deeper into the forest's heart.</p>
+            </section>
+            <section id="path-choices">
+                <h2>Which way will you go?</h2>
+                <button id="toVillage" data-target="failure">Head to the Village</button>
+                <button id="deeperForest" data-target="deep-forest">Continue Deeper into the Forest</button>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; Da 2024</p>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('button[data-target]');
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const targetPage = button.getAttribute('data-target');
+                    window.location.href = targetPage + '.html';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

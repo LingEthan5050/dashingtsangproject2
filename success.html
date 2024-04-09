@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victory! - The Quest for the Mystic Orb</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script defer src="../js/script.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Victory!</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="instructions.html">Game Instructions</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="success-intro">
+                <p>As you grasp the Mystic Orb, its energy surges through you, a testament to the arduous journey you've undertaken. You have navigated treacherous paths, solved ancient riddles, and faced formidable guardians. Your courage and wisdom have led you to this moment, marking you as the true champion of Eldoria.</p>
+                <p>With the Orb's power now yours to wield, you have the potential to shape the future of the realm. How you choose to use this power is a decision for another day. For now, take pride in your achievement and the adventure that brought you here.</p>
+            </section>
+            <section id="congratulations">
+                <h2>Congratulations, Adventurer!</h2>
+                <p>You have successfully completed the Quest for the Mystic Orb. Your name will be remembered in the annals of Eldoria's history.</p>
+            </section>
+            <section id="replay">
+                <button id="replayButton">Embark on Another Quest</button>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; Da 2024</p>
+        </footer>
+    </div>
+    <script>
+        document.getElementById('replayButton').addEventListener('click', function() {
+            window.location.href = 'index.html'; 
+        });
+    </script>
+</body>
+</html>

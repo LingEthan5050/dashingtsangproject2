@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Forest - The Quest for the Mystic Orb</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Into the Deep Forest</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="instructions.html">Game Instructions</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="forest-intro">
+                <p>The deeper regions of the forest hold a silence so profound it seems to muffle even the sound of your own breath. Ancient trees tower above, their canopies blotting out the sky. Suddenly, a flicker of movement catches your eye; a shadowy figure darts between the trees, beckoning you forward.</p>
+            </section>
+            <section id="forest-choices">
+            
+                <button id="followShadow" data-target="artifact-room">Follow the Shadowy Figure</button>
+                <button id="stayPath" data-target="failure">Stay on the Path</button>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; Da 2024</p>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('button[data-target]');
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const targetPage = button.getAttribute('data-target');
+                    window.location.href = targetPage + '.html';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

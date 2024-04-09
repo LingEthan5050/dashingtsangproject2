@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clearing - The Quest for the Mystic Orb</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>The Mysterious Clearing</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="instructions.html">Game Instructions</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="clearing-intro">
+                <p>You emerge from the dense foliage into a serene clearing, bathed in moonlight. In the center stands an ancient stone well, its origins lost to time. A faint glow emanates from within, suggesting something of great power lies beneath.</p>
+            </section>
+            <section id="clearing-choices">
+                <h2>What will you do?</h2>
+                <button id="investigateWell" data-target="index">Attempt Again</button>
+              
+            </section>
+        </main>
+        <footer>
+            <p>&copy; Da 2024</p>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('button[data-target]');
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const targetPage = button.getAttribute('data-target');
+                    window.location.href = targetPage + '.html';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

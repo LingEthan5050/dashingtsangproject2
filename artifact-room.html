@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Artifact Room - The Quest for the Mystic Orb</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script defer src="../js/script.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>The Artifact Room</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="instructions.html">Game Instructions</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="artifact-intro">
+                <p>After navigating the myriad challenges of the Mystic Caverns, you find yourself in a room aglow with an ethereal light. At its center, atop a stone pedestal, lies the Mystic Orb. Its power radiates through the chamber, beckoning. Yet, you feel a sense of foreboding, as if the Orb's ancient guardians might awaken at any moment.</p>
+            </section>
+            <section id="artifact-choices">
+                <h2>The moment of truth:</h2>
+                <button id="takeOrb">Take the Mystic Orb</button>
+                <button id="leaveOrb">Leave the Orb and exit the caverns</button>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; Da 2024</p>
+        </footer>
+    </div>
+    <script>
+        document.getElementById('takeOrb').addEventListener('click', function() {
+            window.location.href = 'success.html'; 
+        });
+
+        document.getElementById('leaveOrb').addEventListener('click', function() {
+            window.location.href = 'failure.html'; 
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eldorian Forest - The Quest for the Mystic Orb</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script defer src="../js/script.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Eldorian Forest</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="instructions.html">Game Instructions</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="forest-intro">
+                <p>As you step into the dense, mist-covered forest of Eldoria, the sounds of civilization fade away, replaced by the whispers of ancient trees and the distant call of mystical creatures. The path before you forks into two: one leads deeper into the forest's heart, while the other winds towards a dimly lit clearing.</p>
+            </section>
+            <section id="forest-choices">
+                <h2>What will you do?</h2>
+                <button id="deepForest">Venture deeper into the forest</button>
+                <button id="forestClearing">Head towards the clearing</button>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; Da 2024</p>
+        </footer>
+    </div>
+    <script>
+        document.getElementById('deepForest').addEventListener('click', function() {
+            window.location.href = 'deep-forest.html'; 
+        });
+
+        document.getElementById('forestClearing').addEventListener('click', function() {
+            window.location.href = 'clearing.html'; 
+        });
+    </script>
+</body>
+</html>

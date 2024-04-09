@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Quest for the Mystic Orb</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script defer src="../js/script.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>The Quest for the Mystic Orb</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="instructions.html">Game Instructions</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="introduction">
+                <p>Welcome, brave adventurer! Your quest to find the Mystic Orb, a legendary artifact of immense power, begins in the ancient forests of Eldoria. But beware, for the path is fraught with dangers and mysteries untold.</p>
+                <p>Choose your path wisely, for each decision will shape your journey and determine the fate of the realm. The Orb's power is coveted by many, friend and foe alike. Will you claim it for glory, for power, or for the greater good?</p>
+            </section>
+            <section id="choices">
+                <h2>Choose Your Path</h2>
+                <button id="forestPath">Enter the Eldorian Forest</button>
+                <button id="ruinsPath">Enter the ruins</button>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; Da 2024</p>
+        </footer>
+    </div>
+    <script>
+        
+        document.getElementById('forestPath').addEventListener('click', function() {
+            
+            window.location.href = 'forest.html';
+        });
+
+        document.getElementById('ruinsPath').addEventListener('click', function() {
+            
+            window.location.href = 'ruins.html'; 
+        });
+    </script>
+</body>
+</html>
